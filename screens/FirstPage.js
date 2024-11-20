@@ -8,6 +8,7 @@ function MainPage(props) {
             <MainButton>Main Page</MainButton>
             <MainButton>Second Page</MainButton>
             <MainButton>Third Page</MainButton>
+            <MainButton> I love lebron james</MainButton>
         </View>
     );
 }
