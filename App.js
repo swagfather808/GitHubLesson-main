@@ -6,9 +6,12 @@ import SecondPage from './screens/SecondPage'
 export default function App() {
   const [pageNum, setPageNum] = useState(1)
  
-  let screen = <FirstPage pageNum={pageNum} />
+  let screen = <FirstPage pageNum={setPageNum} />
   
 
+  if(pageNum === 2){
+    screen = <SecondPage />
+  }
 
  
 

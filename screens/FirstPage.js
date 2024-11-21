@@ -5,7 +5,7 @@ import MainButton from "../components/MainButton";
 function FirstPage(props) {
 
     function changeScreen(){
-        setScreenPage(props.pageNum)
+        props.changeScreen()
     }
 
     return (
