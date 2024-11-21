@@ -4,12 +4,16 @@ import FirstPage from './screens/FirstPage'
 import SecondPage from './screens/SecondPage'
 
 export default function App() {
-  const [pageNum, setPageNum] = useState(1)
+  const [currentPage,setCurrentPage] = useState(0);
+
+  function changeScreen(){
+     setCurrentPage(1)
+  }
  
-  let screen = <FirstPage pageNum={setPageNum} />
+  let screen = <FirstPage changeScreen={changeScreen} />
   
 
-  if(pageNum === 2){
+  if(currentPage === 1){
     screen = <SecondPage />
   }
 
