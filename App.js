@@ -1,8 +1,27 @@
 import { StyleSheet, SafeAreaView } from 'react-native';
-
+import { useState } from 'react'
+import FirstPage from './screens/FirstPage'
+import SecondPage from './screens/SecondPage'
 
 export default function App() {
-  let screen = <FirstPage />
+  const [currentPage,setCurrentPage] = useState(0);
+
+  function changeScreen(){
+     setCurrentPage(1)
+  }
+
+  function changeScreenBack(){
+    setCurrentPage(0)
+  }
+ 
+  let screen = <FirstPage changeScreen={changeScreen} />
+  
+
+  if(currentPage === 1){
+    screen = <SecondPage changeScreenBack={changeScreenBack}/>
+  }
+
+
 
 
   return (

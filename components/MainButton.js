@@ -14,7 +14,7 @@ export default MainButton;
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: "green",
+    backgroundColor: "yellow",
     padding: 8,
     margin: 16,
     borderColor: "black",

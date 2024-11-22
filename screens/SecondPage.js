@@ -1,8 +1,9 @@
 import { StyleSheet, Text, View } from "react-native";
+import MainButton from "../components/MainButton";
 
 function SecondPage(props) {
   return (
-    <Text>Modify Second Page</Text>
+   <MainButton onPress = {props.changeScreenBack}> mjdagoat </MainButton>
   );
 }
 
