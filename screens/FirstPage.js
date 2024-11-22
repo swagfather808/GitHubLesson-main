@@ -9,8 +9,8 @@ function FirstPage(props) {
 
     return (
         <View style={styles.container}>
-            <MainButton onPress = {props.changeScreen}>Main Page</MainButton>
-            <MainButton>Second Page</MainButton>
+            <MainButton>Main Page</MainButton>
+            <MainButton onPress = {props.changeScreen} >Second Page</MainButton>
             <MainButton>Third Page</MainButton>
             <MainButton> I love lebron james</MainButton>
         </View>

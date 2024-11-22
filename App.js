@@ -9,15 +9,18 @@ export default function App() {
   function changeScreen(){
      setCurrentPage(1)
   }
+
+  function changeScreenBack(){
+    setCurrentPage(0)
+  }
  
   let screen = <FirstPage changeScreen={changeScreen} />
   
 
   if(currentPage === 1){
-    screen = <SecondPage />
+    screen = <SecondPage changeScreenBack={changeScreenBack}/>
   }
 
- 
 
 
 
