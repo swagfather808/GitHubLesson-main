@@ -15,7 +15,7 @@ export default SecondPage;
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: Colors.accent500,
+    backgroundColor:Colors.accent500,
     margin: 100,
     width: 500,
   },
