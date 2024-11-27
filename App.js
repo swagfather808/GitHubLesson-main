@@ -26,7 +26,7 @@ export default function App() {
 
   let screen = <FirstPage changeScreen={changeScreen} changeScreen2 = {changeScreen2} />
 
-  let screen = <FirstPage changeScreen={changeScreen} changeToThird={changeToThird}/>
+  screen = <FirstPage changeScreen={changeScreen} changeToThird={changeToThird}/>
   
 
   if(currentPage === 1){
