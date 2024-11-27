@@ -1,14 +1,12 @@
 import { View, Image } from 'react-native'
+import MainButton from '../components/MainButton';
 
-function LebronPage(props){
-    return(
+function LebronPage(props) {
+    return (
         <View>
-            <Image>
-               source=require{('../download-removebg-preview')}
-            </Image>
-
+            <MainButton onPress={props.changeScreenBack}> I love Lebron</MainButton>
         </View>
-    )
+    );
 
 }
 
