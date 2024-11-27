@@ -10,5 +10,6 @@ function LebronPage(props){
         </View>
     )
 
-    
 }
+
+export default LebronPage; 
