@@ -18,7 +18,7 @@ export default Title;
 const styles = StyleSheet.create({
     textContainer: {
         borderColor: "yellow",
-        borderWidth: 3,
+        borderWidth: 2,
         borderRadius: 5,
         alignSelf: 'center',
         shadowColor: 'black',
