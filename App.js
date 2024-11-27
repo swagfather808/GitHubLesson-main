@@ -8,9 +8,7 @@ export default function App() {
   const [currentPage,setCurrentPage] = useState(0);
 
 
-  function changeScreen2()
-  {
-
+  
   function changeToThird() {
     setCurrentPage(2)
   }
