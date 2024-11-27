@@ -3,12 +3,17 @@ import { useState } from 'react'
 import FirstPage from './screens/FirstPage'
 import SecondPage from './screens/SecondPage'
 import ThirdPage from './screens/ThirdPage'
+import LebronPage from './screens/LebronPage'
 
 export default function App() {
   const [currentPage,setCurrentPage] = useState(0);
 
   function changeToThird() {
     setCurrentPage(2)
+  }
+
+  function changeToLebron(){
+    setCurrentPage(3)
   }
 
   function changeScreen(){
@@ -19,7 +24,7 @@ export default function App() {
     setCurrentPage(0)
   }
  
-  let screen = <FirstPage changeScreen={changeScreen} changeToThird={changeToThird}/>
+  let screen = <FirstPage changeScreen={changeScreen} changeToThird={changeToThird} changeToLebron={changeToLebron}/>
   
 
   if(currentPage === 1){
@@ -28,6 +33,10 @@ export default function App() {
 
   if(currentPage === 2) {
     screen = <ThirdPage changeScreenBack={changeScreenBack}/>
+  }
+
+  if(currentPage === 3){
+    screen = <LebronPage changeScreenBack={changeScreenBack}/>
   }
 
 
