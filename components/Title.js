@@ -18,11 +18,10 @@ export default Title;
 const styles = StyleSheet.create({
     textContainer: {
         borderColor: "yellow",
-        borderWidth: 3,
+        borderWidth: 2,
         borderRadius: 5,
         alignSelf: 'center',
         shadowColor: 'black',
-        shadowOffset: { width: 0, height: 2 },  //has curly brackets because it needs two values or elements
         shadowRadius: 6,
         shadowOpacity: 0.5,
         padding: 10,
