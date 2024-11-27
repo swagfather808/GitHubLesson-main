@@ -3,7 +3,7 @@ import MainButton from "../components/MainButton";
 
 function ThirdPage(props) {
   return (
-   <MainButton onPress = {props.changeScreenBack}> Third Page </MainButton>
+   <MainButton onPress = {props.changeScreenBack}> lebrondagoat </MainButton>
   );
 }
 
