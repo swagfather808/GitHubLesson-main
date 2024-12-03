@@ -8,7 +8,9 @@ import LebronPage from './screens/LebronPage'
 export default function App() {
   const [currentPage,setCurrentPage] = useState(0);
 
-
+  function changeToLebron() {
+    setCurrentPage(3)
+  }
   
   function changeToThird() {
     setCurrentPage(3)
@@ -17,6 +19,8 @@ export default function App() {
   function changeScreen2(){
     setCurrentPage(2)
   }
+
+  function changeToSecond(){
 
   function changeScreen(){
      setCurrentPage(1)
@@ -35,11 +39,14 @@ export default function App() {
   if(currentPage === 1){
     screen = <SecondPage changeScreenBack={changeScreenBack}/>
   }
+
   if(currentPage === 2)
   {
     screen = <ThirdPage changeScreenBack={changeScreenBack}/>
   }
 
+  if(currentPage === 3) {
+    screen = <LebronPage changeScreenBack = {changeScreenBack} />
   if(currentPage === 3){
     screen = <LebronPage changeScreenBack={changeScreenBack}/>
   }
