@@ -14,7 +14,7 @@ export default function App() {
     setCurrentPage(2)
   }
 
-  function changeToLebron(){
+  function changeScreen2(){
     setCurrentPage(3)
   }
 
@@ -37,10 +37,6 @@ export default function App() {
   }
   if(currentPage === 2)
   {
-    screen = <ThirdPage changeScreenBack={changeScreenBack}/>
-  }
-
-  if(currentPage === 2) {
     screen = <ThirdPage changeScreenBack={changeScreenBack}/>
   }
 
