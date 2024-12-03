@@ -8,17 +8,15 @@ import LebronPage from './screens/LebronPage'
 export default function App() {
   const [currentPage,setCurrentPage] = useState(0);
 
-
+  function changeToLebron() {
+    setCurrentPage(3)
+  }
   
   function changeToThird() {
     setCurrentPage(2)
   }
 
-  function changeToLebron(){
-    setCurrentPage(3)
-  }
-
-  function changeScreen(){
+  function changeToSecond(){
      setCurrentPage(1)
   }
 
@@ -27,21 +25,22 @@ export default function App() {
   }
  
 
-  let screen = <FirstPage changeScreen={changeScreen} changeScreen2 = {changeScreen2} />
+  let screen = <FirstPage changeToSecond={changeToSecond} changeToThird = {changeToThird} changeToLebron = {changeToLebron}/>
 
-  screen = <FirstPage changeScreen={changeScreen} changeToThird={changeToThird}/>
+  screen = <FirstPage changeToSecond={changeToSecond} changeToThird={changeToThird} changeToLebron = {changeToLebron}/>
   
 
   if(currentPage === 1){
     screen = <SecondPage changeScreenBack={changeScreenBack}/>
   }
+
   if(currentPage === 2)
   {
     screen = <ThirdPage changeScreenBack={changeScreenBack}/>
   }
 
-  if(currentPage === 2) {
-    screen = <ThirdPage changeScreenBack={changeScreenBack}/>
+  if(currentPage === 3) {
+    screen = <LebronPage changeScreenBack = {changeScreenBack} />
   }
 
   console.log(screen);
