@@ -9,4 +9,6 @@ function ThirdPage(props) {
 
 export default ThirdPage;
 
-const styles = StyleSheet.create({});
+const styles = StyleSheet.create({
+  
+});

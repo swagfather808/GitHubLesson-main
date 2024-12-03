@@ -11,11 +11,11 @@ export default function App() {
 
   
   function changeToThird() {
-    setCurrentPage(2)
+    setCurrentPage(3)
   }
 
   function changeScreen2(){
-    setCurrentPage(3)
+    setCurrentPage(2)
   }
 
   function changeScreen(){
@@ -27,9 +27,9 @@ export default function App() {
   }
  
 
-  let screen = <FirstPage changeScreen={changeScreen} changeScreen2 = {changeScreen2} />
+  let screen = <FirstPage changeScreen={changeScreen} changeScreen2 = {changeScreen2} changeToThird = {changeToThird}/>
 
-  screen = <FirstPage changeScreen={changeScreen} changeToThird={changeToThird}/>
+  
   
 
   if(currentPage === 1){
@@ -38,6 +38,10 @@ export default function App() {
   if(currentPage === 2)
   {
     screen = <ThirdPage changeScreenBack={changeScreenBack}/>
+  }
+
+  if(currentPage === 3){
+    screen = <LebronPage changeScreenBack={changeScreenBack}/>
   }
 
   console.log(screen);
