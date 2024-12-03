@@ -3,6 +3,7 @@ import { useState } from 'react'
 import FirstPage from './screens/FirstPage'
 import SecondPage from './screens/SecondPage'
 import ThirdPage from './screens/ThirdPage'
+import LebronPage from './screens/LebronPage'
 
 export default function App() {
   const [currentPage,setCurrentPage] = useState(0);
@@ -11,6 +12,10 @@ export default function App() {
   
   function changeToThird() {
     setCurrentPage(2)
+  }
+
+  function changeToLebron(){
+    setCurrentPage(3)
   }
 
   function changeScreen(){
