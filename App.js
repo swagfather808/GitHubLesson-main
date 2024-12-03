@@ -46,13 +46,21 @@ export default function App() {
   if (currentPage === 3) {
     screen = <LebronPage changeScreenBack={changeScreenBack} />
 
+
     console.log(screen);
     return (
-      <SafeAreaView>
+      <SafeAreaView style={styles.container}>
         {screen}
       </SafeAreaView>
     );
   }
 
-  const styles = StyleSheet.create({})
+  const styles = StyleSheet.create({  
+    container: {
+      flex: 1,
+      backgroundColor: '#fff',
+      alignItems: 'center',
+      justifyContent: 'center',
+    },
+  })
 }
