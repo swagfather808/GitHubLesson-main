@@ -5,19 +5,19 @@ import Animated, {
     withTiming,
     useAnimatedStyle,
     Easing,
+    withSpring,
 } from 'react-native-reanimated';
 
 function LebronPage(props) {
     const randomWidth = useSharedValue(10)
-
     const config = {
-        duration: 1000,
-        easing: Easing.bezier(0.5, 0.01, 0, 0.1)
+        duration: 2000,
+        easing: Easing.bezier(0.5,0.01,0,1),
     }
 
     const style = useAnimatedStyle(() => {
         return {
-            width: withTiming(randomWidth.value, config)
+            marginVertical: withSpring(randomWidth.value, config)
         }
 
     })
@@ -30,7 +30,7 @@ function LebronPage(props) {
             <Button
                 title='toggle'
                 onPress={() => {
-                    randomWidth.value = Math.random() * 550;
+                    randomWidth.value = Math.random() * 300;
                 }}
             />
             <MainButton onPress={props.changeScreenBack}> I love Lebron</MainButton>
