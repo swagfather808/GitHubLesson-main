@@ -17,7 +17,7 @@ function LebronPage(props) {
 
     const style = useAnimatedStyle(() => {
         return {
-            marginVertical: withSpring(randomWidth.value, config)
+            width: withSpring(randomWidth.value, config)
         }
 
     })
@@ -50,7 +50,7 @@ const styles = StyleSheet.create({
     box: {
         width: 100,
         height: 80,
-        backgroundColor: 'green',
+        backgroundColor: 'black',
         margin: 30,
     }
 
